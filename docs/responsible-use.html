@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsible use · Copilot in Practice</title>
+<meta name="description" content="What may go into Copilot, what to
+check, and where the person stays accountable.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">Copilot <span>in Practice</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html">Before</a>
+    <a href="context.html">Context</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="workflow.html">Workflow</a>
+    <a href="responsible-use.html" class="on">Responsible use</a>
+    <a href="resources.html">More</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>Session 2 · The rules in plain language</p>
+</div>
+<h1 id="responsible-use">Responsible use</h1>
+<p>This is not legal advice. It is the team’s operating habit, aligned
+to Curtin policy. If a decision matters, check the current Curtin policy
+or ask the faculty’s data governance contact.</p>
+<h2 id="the-short-version">The short version</h2>
+<p>Only put into Copilot what you would put into a Curtin system. Treat
+every output as a draft by an unknown author. A person signs off, and
+the person who sends it owns it.</p>
+<h2 id="what-enterprise-copilot-protects">What enterprise Copilot
+protects</h2>
+<p>Curtin’s Copilot runs inside the Curtin tenant. Prompts, responses
+and the work data it can reach stay within the organisation’s Microsoft
+365 environment, under the same contractual terms as mail and files.
+That is a real protection, and it is why the tool is approved.</p>
+<p>It does not make every document appropriate to paste.
+Confidentiality, privacy and client obligations still apply.</p>
+<h2 id="what-not-to-paste">What not to paste</h2>
+<ul>
+<li>Client or participant personal information, unless there is a clear
+reason and it is within policy.</li>
+<li>Pricing, margins, contract terms and anything covered by a
+confidentiality clause.</li>
+<li>Third-party material the client has not cleared for this use.</li>
+<li>Anything you would not put in a Curtin system.</li>
+<li>Anything you could not defend if the client saw the prompt.</li>
+</ul>
+<p>When in doubt, use a sanitised brief, or ask before you paste.</p>
+<h2 id="what-copilot-gets-wrong">What Copilot gets wrong</h2>
+<ul>
+<li><strong>Fluency is not evidence.</strong> It writes confident
+sentences about things it cannot see.</li>
+<li><strong>It agrees with you.</strong> Push back and it folds. Ask for
+the strongest case against its own answer.</li>
+<li><strong>It invents specifics.</strong> Names, dates, figures,
+citations, policy clauses. Check every one.</li>
+<li><strong>It uses stale context.</strong> A document from last year,
+an old brief, an out-of-date fee schedule.</li>
+<li><strong>It loses the thread between apps.</strong> The outline in
+Word does not know what you agreed in Outlook.</li>
+</ul>
+<h2 id="human-checkpoints">Human checkpoints</h2>
+<p>These do not move, whatever the tool does:</p>
+<ul>
+<li>A person reads anything that goes to a client, end to end.</li>
+<li>A person checks every figure against a source.</li>
+<li>A person owns every commitment, date and price.</li>
+<li>A person decides what is filed as a record.</li>
+</ul>
+<h2 id="records-and-audit">Records and audit</h2>
+<p>If an output becomes a Curtin record, it follows the same
+record-keeping rules as any other document. Copilot activity is logged
+in the tenant. Do not treat a chat as private note-taking for anything
+that matters.</p>
+<h2 id="memory-and-personalisation">Memory and personalisation</h2>
+<p>Copilot remembers context to be useful. Review it. Delete anything
+wrong, stale or about a client. If you share a machine or a demo
+account, check what is remembered before you present.</p>
+<h2 id="a-five-line-check-before-you-send">A five-line check before you
+send</h2>
+<ol type="1">
+<li>Does it name the right client, program and people?</li>
+<li>Is every number one I can trace?</li>
+<li>Did it invent a commitment, a date or a claim?</li>
+<li>Is the tone right for this reader?</li>
+<li>Would I be comfortable if the client saw how this was produced?</li>
+</ol>
+<h2 id="more">More</h2>
+<ul>
+<li><a
+href="https://support.microsoft.com/en-us/microsoft-365-copilot/how-copilot-chat-works-with-and-without-a-microsoft-365-copilot-license">How
+Copilot Chat works with and without a licence</a></li>
+<li><a
+href="https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview">Microsoft
+Copilot overview</a></li>
+<li><a
+href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes">Release
+notes</a></li>
+<li>Curtin’s AI policy and records guidance, on the staff intranet.</li>
+</ul>
+</main>
+<footer><div class="in">
+  <span>Copilot in Practice · Curtin Executive Education training materials</span>
+  <span>After the day: <a href="resources.html">Resources</a> · <a href="workflow.html">Workflow</a> · <a href="responsible-use.html">Responsible use</a></span>
+  <span>Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+<script>
+document.querySelectorAll('main pre').forEach(function (pre) {
+  var b = document.createElement('button');
+  b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy';
+  b.onclick = function () {
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1200);
+    });
+  };
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

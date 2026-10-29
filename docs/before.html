@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before the day · Copilot in Practice</title>
+<meta name="description" content="Pre-work for Copilot in Practice: the
+two-minute survey, the licence check and what to bring.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">Copilot <span>in Practice</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html" class="on">Before</a>
+    <a href="context.html">Context</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="workflow.html">Workflow</a>
+    <a href="responsible-use.html">Responsible use</a>
+    <a href="resources.html">More</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>Pre-work</p>
+</div>
+<h1 id="before-the-day">Before the day</h1>
+<p>Three things, about ten minutes in total. The more of the survey you
+answer, the more the exercises use your work rather than a generic
+example.</p>
+<h2 id="do-the-two-minute-survey">1. Do the two-minute survey</h2>
+<p>The survey asks which tasks take longer than they should, and where
+you think AI could help in your role. It also asks whether you are
+willing to share a past brief or workflow.</p>
+<p><a
+href="https://github.com/michael-borck/copilot-in-practice/blob/main/survey/pre-session-survey.md"
+class="btn">Open the survey questions</a></p>
+<p>Send your answers to Michael by Friday 30 October. If you would
+rather send a workflow or a past brief directly, do that instead.
+Sanitised is fine.</p>
+<p>Do not include client names, participant names, pricing, margins or
+contract terms in your answers.</p>
+<h2 id="check-your-copilot-label">2. Check your Copilot label</h2>
+<p>Sign in at <a
+href="https://copilot.cloud.microsoft">copilot.cloud.microsoft</a> with
+your Curtin account. Look under your name. You will see one of
+these:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Label</th>
+<th>What it usually means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copilot Chat (Basic)</td>
+<td>Web reasoning, plus whatever you open or upload. Limited work
+data.</td>
+</tr>
+<tr>
+<td>M365 Copilot (Basic)</td>
+<td>Similar chat, with some app access depending on the tenant.</td>
+</tr>
+<tr>
+<td>M365 Copilot (Premium)</td>
+<td>Adds work data through Microsoft Graph: mail, calendar, files,
+chats, meetings.</td>
+</tr>
+</tbody>
+</table>
+<p>Write the label down. Bring it with you. The session looks different
+on different licences, and that difference is one of the things we will
+talk about.</p>
+<div class="note">
+<p>Microsoft renamed some of these products in 2026. Microsoft 365
+Copilot is now Microsoft Copilot, and Microsoft 365 Copilot Chat is now
+Microsoft Copilot Chat. The labels above are what you will see on
+screen. If yours says something else, note it anyway.</p>
+</div>
+<h2 id="bring-one-real-task">3. Bring one real task</h2>
+<p>Think of one task you do most weeks that takes longer than it should.
+Proposal drafting, follow-up emails, turning a brief into a program
+description, updating the pipeline, building a budget table. Any of
+them.</p>
+<p>Bring it as a description, not a document. No client names.</p>
+<h2 id="what-to-bring-on-the-day">What to bring on the day</h2>
+<ul>
+<li>A laptop with your Curtin account signed in.</li>
+<li>Access to Outlook, Word and Excel.</li>
+<li>Your Copilot label.</li>
+<li>One task from your week.</li>
+</ul>
+<h2 id="what-you-do-not-need">What you do not need</h2>
+<ul>
+<li>Any technical background.</li>
+<li>Any prompt-writing experience.</li>
+<li>A perfect example. A rough task is enough.</li>
+</ul>
+</main>
+<footer><div class="in">
+  <span>Copilot in Practice · Curtin Executive Education training materials</span>
+  <span>After the day: <a href="resources.html">Resources</a> · <a href="workflow.html">Workflow</a> · <a href="responsible-use.html">Responsible use</a></span>
+  <span>Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+<script>
+document.querySelectorAll('main pre').forEach(function (pre) {
+  var b = document.createElement('button');
+  b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy';
+  b.onclick = function () {
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1200);
+    });
+  };
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

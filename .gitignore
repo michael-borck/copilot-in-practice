@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+
+# Raw source documents
+# Client names, pricing, margins and tender terms stay local only.
+# Only the sanitised briefs in source-documents/samples/ are committed.
+source-documents/private/*
+!source-documents/private/.gitkeep
+
+# Python
+__pycache__/
+*.pyc

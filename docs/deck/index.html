@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copilot in Practice</title>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="deck.css">
+<style>
+/* slide-specific layout */
+.flow5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-content:center;height:100%}
+.flow5 .bx{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px 16px;position:relative}
+.flow5 .bx.hi{background:color-mix(in srgb,var(--acc) 9%,var(--card));border-color:color-mix(in srgb,var(--acc) 55%,transparent)}
+.flow5 .bx .n{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--acc)}
+.flow5 .bx h4{font-size:18px;margin:8px 0 6px;color:var(--ink);font-weight:600;line-height:1.2}
+.flow5 .bx p{font-size:14px;line-height:1.38;color:var(--dim)}
+.big{font-family:var(--serif);font-size:36px;line-height:1.32;color:var(--ink);max-width:1000px}
+.big em{font-style:normal;color:var(--acc)}
+.big .small{display:block;font-family:var(--sans);font-size:19px;color:var(--dim);margin-top:22px;line-height:1.45}
+table.w{width:100%;border-collapse:collapse;font-size:15.5px}
+table.w th{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--acc);border-bottom:1px solid var(--faint);padding:7px 12px 7px 0}
+table.w td{border-bottom:1px solid var(--hair);padding:9px 12px 9px 0;color:var(--dim);vertical-align:top}
+table.w td:first-child{color:var(--ink);font-weight:600}
+.code{font-family:var(--mono);font-size:14px;line-height:1.65;color:var(--ink);background:#0C0F15;border:1px solid var(--hair);border-radius:9px;padding:16px 18px;white-space:pre-wrap}
+.code .f{color:var(--acc)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px;height:100%}
+.two.mid{align-content:center}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;height:100%;align-content:center}
+.bub{font-size:16px;line-height:1.45;padding:12px 15px;border-radius:10px;margin-top:10px}
+.bub.you{background:#1B202B;color:var(--ink)}
+.bub.ai{background:#0C0F15;border:1px solid var(--hair);color:var(--dim)}
+.quote{font-family:var(--serif);font-size:34px;line-height:1.35;color:var(--ink);max-width:960px}
+.quote em{font-style:normal;color:var(--acc)}
+.bigqr{display:flex;align-items:center;gap:26px}
+.bigqr img{width:170px;height:170px;border-radius:8px;display:block}
+.bigqr .u{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--dim);line-height:1.7}
+.mark{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--acc);text-transform:uppercase}
+.slide.ex .exgrid{flex:1;height:auto;min-height:0;margin-top:20px}
+.slide.ex .exgrid > div{min-height:0;overflow:auto}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+<div id="halo"></div>
+<div id="counter"><b id="cn">1</b> / <span id="ct"></span></div>
+<div id="timer"></div>
+<div id="nav"></div>
+<div id="blank"></div>
+
+<!-- =====================================================================
+     SESSION 1 · OPEN (9:00)
+     ===================================================================== -->
+
+<section class="slide title" data-ch="0" data-title="Title">
+  <div class="k">Curtin Executive Education · Half-day workshop</div>
+  <h1 class="t">Copilot <em>in practice</em></h1>
+  <div class="sub">Getting real work done in Outlook, Word, Excel, Edge and Chat, and knowing where the person stays in charge.</div>
+  <div class="b">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;height:100%;padding-bottom:10px">
+      <div>
+        <div class="mark">Half day · 9:00 to 12:30</div>
+        <div class="lab" style="margin-top:12px">Michael Borck · School of Marketing and Management</div>
+        <div class="lab" style="margin-top:6px">michael.borck@curtin.edu.au</div>
+      </div>
+      <div class="bigqr">
+        <img src="../assets/qr.svg" alt="QR code for the course site">
+        <div class="u">Course site<br>michael-borck.github.io/<br>copilot-in-practice</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="0" data-title="The gap" data-steps="3">
+  <div class="k">The problem</div>
+  <h1 class="t">Ask Copilot about your email.</h1>
+  <div class="sub">Same account. Same day. Two different answers.</div>
+  <div class="b">
+    <div class="row c2">
+      <div class="card dim" data-s="1">
+        <div class="lab">Copilot Chat · browser or Edge</div>
+        <div class="q dim">"I don't have access to your inbox. You can paste the email here."</div>
+        <div class="p">Web context plus whatever you give it.</div>
+      </div>
+      <div class="card hi" data-s="2">
+        <div class="lab a">Copilot in Outlook · pane open</div>
+        <div class="q">"Here is what I can see in this thread: three decisions the client is asking for..."</div>
+        <div class="p">The email you selected is the context.</div>
+      </div>
+    </div>
+    <div class="foot" data-s="3"><b>That gap is the session.</b> Not a limitation to wait out. A place where you decide what Copilot sees.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="0" data-title="The one idea" data-steps="2">
+  <div class="k">The one idea</div>
+  <h1 class="t">You are <em>the orchestrator.</em></h1>
+  <div class="b">
+    <div class="flow5">
+      <div class="bx" data-s="1"><div class="n">OUTLOOK</div><h4>Gather</h4><p>The email, the thread, the calendar. This is where the context lives.</p></div>
+      <div class="bx" data-s="1"><div class="n">CHAT</div><h4>Extract</h4><p>Ask for the decisions, dates and asks. Keep it short.</p></div>
+      <div class="bx" data-s="1"><div class="n">WORD</div><h4>Refine</h4><p>Paste it, say where it came from, ask for the shape you need.</p></div>
+      <div class="bx" data-s="1"><div class="n">EXCEL</div><h4>Quantify</h4><p>Turn scope into a table, rates to fill, a formula to check.</p></div>
+      <div class="bx hi" data-s="2"><div class="n">YOU</div><h4>Carry and check</h4><p>Every arrow is a copy and paste by a person. That is where judgement enters.</p></div>
+    </div>
+    <div class="foot" data-s="2">Copilot does not pass work between apps for you. You do. That is the skill.</div>
+  </div>
+</section>
+
+<section class="slide ex" data-ch="0" data-min="5" data-title="Context pre-flight">
+  <div class="exbar"><span class="pill">Exercise 0</span><span class="mins">5 minutes</span></div>
+  <h1 class="t">Check what your own Copilot can see.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>Open Copilot Chat at copilot.cloud.microsoft. Note the label under your name.</li>
+      <li>Ask: "What can you see about my work right now?"</li>
+      <li>Open Outlook, select an email, open the Copilot pane, ask again.</li>
+      <li>Open Word on a sample document. Ask again.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Capture</div>
+        <div class="p">Write your three answers on the whiteboard: Chat, Outlook, Word.</div>
+        <div class="p" style="margin-top:14px">Expect three or four different answers in the room. That is the lesson.</div>
+      </div>
+      <div class="out"><b>Output</b>You can state what your Copilot can see, and why it differs from the person next to you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SESSION 2 · JUDGE (9:15)
+     ===================================================================== -->
+
+<section class="slide" data-ch="1" data-title="Where it helps">
+  <div class="k">Opportunity</div>
+  <h1 class="t">Where it genuinely helps.</h1>
+  <div class="b">
+    <div class="row c3" style="grid-template-rows:1fr 1fr;height:100%">
+      <div class="card"><div class="lab">Draft</div><div class="h">First drafts</div><div class="p">A proposal section, a program description, a follow-up email.</div></div>
+      <div class="card"><div class="lab">Compress</div><div class="h">Summary</div><div class="p">A long brief or transcript into a one-page summary, or a summary into a slide outline.</div></div>
+      <div class="card"><div class="lab">Reframe</div><div class="h">Restructure</div><div class="p">Academic to client, client to internal, long to short.</div></div>
+      <div class="card"><div class="lab">Challenge</div><div class="h">Critique</div><div class="p">A red-team pass before a document goes to the director or a client.</div></div>
+      <div class="card"><div class="lab">Count</div><div class="h">Excel</div><div class="p">Explain a formula, suggest a structure, draft a budget table.</div></div>
+      <div class="card"><div class="lab">Follow up</div><div class="h">Meeting actions</div><div class="p">Notes into actions, owners, dates and a follow-up email.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="1" data-title="Where it trips">
+  <div class="k">Risk</div>
+  <h1 class="t">Where it trips people up.</h1>
+  <div class="b">
+    <ul class="lst">
+      <li><b>It agrees with you.</b> Push back and it folds. That is sycophancy, not agreement.</li>
+      <li><b>It invents specifics.</b> Names, dates, figures, citations, policy clauses. Fluency is not evidence.</li>
+      <li><b>It uses stale context.</b> Last year's brief, an old fee schedule, a superseded program.</li>
+      <li><b>It loses the thread between apps.</b> The outline in Word does not know what you agreed in Outlook.</li>
+      <li><b>It writes confidently about what it cannot see.</b> A blank space becomes a plausible guess.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" data-ch="1" data-title="Sycophancy demo" data-steps="3">
+  <div class="k">Live demo</div>
+  <h1 class="t">Watch it switch sides.</h1>
+  <div class="b">
+    <div class="row c2">
+      <div class="card" data-s="1">
+        <div class="lab">You</div>
+        <div class="bub you">Here is our plan for the new program. Justify it to the client.</div>
+        <div class="bub ai" data-s="2">"This is a strong proposal. The structure clearly addresses the client's priorities..."</div>
+      </div>
+      <div class="card hi" data-s="3">
+        <div class="lab a">You, pushing back</div>
+        <div class="bub you">I think this plan is weak and the client will hate it.</div>
+        <div class="bub ai">"You are right. This plan has significant gaps. The client may see..."</div>
+      </div>
+    </div>
+    <div class="foot">Same plan. Opposite answer. The prompt did not change the facts. It changed the audience.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="1" data-title="The rules">
+  <div class="k">The rules, in plain language</div>
+  <h1 class="t">What may go in.</h1>
+  <div class="b">
+    <div class="three">
+      <div class="card">
+        <div class="lab a">Usually fine</div>
+        <div class="h" style="font-size:20px">Work you would put in a Curtin system</div>
+        <div class="p">Sanitised briefs, public program descriptions, your own notes with names removed, generic drafts.</div>
+      </div>
+      <div class="card">
+        <div class="lab a">Needs a reason</div>
+        <div class="h" style="font-size:20px">Client and participant detail</div>
+        <div class="p">Personal information, pricing, margins, contract terms. Use the minimum, know why, stay within policy.</div>
+      </div>
+      <div class="card">
+        <div class="lab a">Keep out</div>
+        <div class="h" style="font-size:20px">Cleared material and confidentiality</div>
+        <div class="p">Third-party material the client has not cleared, and anything you could not defend if the client saw the prompt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="1" data-title="Accountability">
+  <div class="k">The line that does not move</div>
+  <div class="b" style="display:flex;align-items:center">
+    <div class="quote">Copilot can draft. It cannot be accountable. <em>That stays with the person whose name is on the email.</em></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SESSION 3 · SEE (10:00)
+     ===================================================================== -->
+
+<section class="slide" data-ch="2" data-title="Three variables">
+  <div class="k">Context</div>
+  <h1 class="t">Three things decide what it sees.</h1>
+  <div class="b">
+    <div class="three">
+      <div class="card"><div class="lab">01</div><div class="h">The app</div><div class="p">Outlook sees the email. Word sees the document. Chat sees the page and what you paste.</div></div>
+      <div class="card"><div class="lab">02</div><div class="h">The licence</div><div class="p">Basic is web plus uploads. Premium adds work data through Microsoft Graph.</div></div>
+      <div class="card"><div class="lab">03</div><div class="h">The tenant</div><div class="p">Curtin's admins decide which features are on. Two people on the same licence can differ.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="What each app sees">
+  <div class="k">Reference</div>
+  <h1 class="t">What each place can see.</h1>
+  <div class="b">
+    <table class="w">
+      <tr><th>Where you are</th><th>What Copilot usually sees</th></tr>
+      <tr><td>Outlook, email selected</td><td>The open email, and with a licence the mailbox, calendar and related files</td></tr>
+      <tr><td>Outlook, nothing selected</td><td>The mailbox and calendar, to the extent licence and tenant allow</td></tr>
+      <tr><td>Word</td><td>The open document, and files you point it to</td></tr>
+      <tr><td>Excel</td><td>The workbook, and the range you select</td></tr>
+      <tr><td>Chat in browser or Edge</td><td>The web, the open page, and what you paste or upload</td></tr>
+      <tr><td>Teams</td><td>The open chat or meeting, and with a licence, work data</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="Your label">
+  <div class="k">Check yours</div>
+  <h1 class="t">What does your label say?</h1>
+  <div class="sub">Sign in at copilot.cloud.microsoft. Look under your name.</div>
+  <div class="b">
+    <div class="row c3" style="height:100%;align-content:center">
+      <div class="card"><div class="lab">Basic</div><div class="h">Copilot Chat</div><div class="p">Web reasoning, plus the content you open or upload. Limited work data.</div></div>
+      <div class="card"><div class="lab">Basic</div><div class="h">M365 Copilot</div><div class="p">Chat plus some app access, depending on what the tenant allows.</div></div>
+      <div class="card hi"><div class="lab a">Premium</div><div class="h">M365 Copilot</div><div class="p">Adds work data through Microsoft Graph: mail, calendar, files, chats, meetings.</div></div>
+    </div>
+    <div class="foot">Labels and product names moved in 2026. Note what you see, not what the slide says.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="The carry pattern" data-steps="5">
+  <div class="k">The habit</div>
+  <h1 class="t">Carry the work on purpose.</h1>
+  <div class="b">
+    <div class="flow5">
+      <div class="bx" data-s="1"><div class="n">01 GATHER</div><h4>Open the source</h4><p>Select the email. Open the document. Open the page.</p></div>
+      <div class="bx" data-s="2"><div class="n">02 EXTRACT</div><h4>Ask for the bones</h4><p>Decisions, dates, asks, numbers. Short.</p></div>
+      <div class="bx" data-s="3"><div class="n">03 CARRY</div><h4>Paste it across</h4><p>Say where it came from. Do not assume the next app knows.</p></div>
+      <div class="bx" data-s="4"><div class="n">04 REFINE</div><h4>Shape it</h4><p>Ask for the format the destination needs.</p></div>
+      <div class="bx hi" data-s="5"><div class="n">05 CHECK</div><h4>Verify</h4><p>Names, figures, commitments. Before it moves on.</p></div>
+    </div>
+    <div class="foot">Every arrow is a copy and paste by a person. That is not a bug. That is control.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="Edge">
+  <div class="k">The browser</div>
+  <h1 class="t">Edge is a context too.</h1>
+  <div class="b">
+    <ul class="lst">
+      <li><b>Sign in with the Curtin account.</b> A personal account gives you the consumer experience.</li>
+      <li><b>Work mode and web mode are different.</b> Check which one you are in before you ask.</li>
+      <li><b>Uploading a file is a deliberate act.</b> Confirm the file, the permissions and the audience.</li>
+      <li><b>The open page is context.</b> Close anything you would not want summarised if you share your screen.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="Five habits">
+  <div class="k">Prompt habits</div>
+  <h1 class="t">Five habits that do the work.</h1>
+  <div class="b">
+    <ul class="steps">
+      <li>Say who you are and who the reader is.</li>
+      <li>Paste the source. Do not describe it.</li>
+      <li>State the format: headings, table, word limit.</li>
+      <li>Name the constraints: tone, what to leave out, what not to invent.</li>
+      <li>Ask for the gaps: "list what you could not determine from this material".</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="Morning tea">
+  <div class="k">10:30</div>
+  <div class="b" style="display:flex;align-items:center">
+    <div class="big">Morning tea.<span class="small">Back at 11:00. Bring your laptop and one task you would like to try.</span></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SESSION 4 · BUILD (11:00)
+     ===================================================================== -->
+
+<section class="slide ex" data-ch="3" data-min="10" data-title="Exercise 1 · Read the brief">
+  <div class="exbar"><span class="pill">Exercise 1</span><span class="mins">10 minutes</span></div>
+  <h1 class="t">Read the brief like a proposal writer.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>The client's stated outcomes, in their words.</li>
+      <li>What they need but did not say.</li>
+      <li>The three decisions the proposal must help them make.</li>
+      <li>The questions we should ask before writing.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Prompt</div>
+        <div class="code">Read this brief. Give me:
+1. stated outcomes, in their words
+2. what they need but did not say
+3. the three decisions
+4. questions to ask
+Mark anything you inferred.
+<span class="f">BRIEF: [paste]</span></div>
+      </div>
+      <div class="out"><b>Output</b>A short brief analysis you can carry into Word.</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide ex" data-ch="3" data-min="15" data-title="Exercise 2 · Outline">
+  <div class="exbar"><span class="pill">Exercise 2</span><span class="mins">15 minutes</span></div>
+  <h1 class="t">Draft the outline in Word.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>Paste the brief and your analysis into Word.</li>
+      <li>Ask for the house structure: context, outcomes, modules, delivery, fees, why Curtin.</li>
+      <li>Second pass: cut anything generic. Keep only what is specific.</li>
+      <li>Mark what it inferred rather than read.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Second prompt</div>
+        <div class="code">Cut anything that would be true of
+any provider. Keep only what is
+specific to this brief. Mark
+inferences with [inferred].</div>
+      </div>
+      <div class="out"><b>Output</b>A draft outline, clearly marked where it guessed.</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide ex" data-ch="3" data-min="15" data-title="Exercise 3 · Red team">
+  <div class="exbar"><span class="pill">Exercise 3</span><span class="mins">15 minutes</span></div>
+  <h1 class="t">Get an honest critique.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>Ask Copilot to be a sceptical client.</li>
+      <li>Find the unsupported claims and the unanswered questions.</li>
+      <li>Ask for a revision plan, not a rewrite.</li>
+      <li>Revise one section by hand.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Prompt</div>
+        <div class="code">Act as a sceptical client.
+What makes you doubt this provider?
+Which claims are unsupported?
+Where does it answer a question I
+did not ask? What is missing
+against the criteria? Give a
+revision plan, not a rewrite.
+<span class="f">OUTLINE: [paste]</span></div>
+      </div>
+      <div class="out"><b>Output</b>A revision plan, and one section improved by you.</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide ex" data-ch="3" data-min="5" data-title="Exercise 4 · Budget">
+  <div class="exbar"><span class="pill">Exercise 4</span><span class="mins">5 minutes</span></div>
+  <h1 class="t">Turn scope into a table.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>Paste the scope list into Excel or Chat.</li>
+      <li>Ask for activity, assumption, quantity, rate, total.</li>
+      <li>Leave rates blank. Do not let it invent a price.</li>
+      <li>Ask it to explain the total formula in plain English.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Prompt</div>
+        <div class="code">Propose an Excel table:
+activity, assumption, quantity,
+rate, total. Leave rate blank.
+Give the total formula in plain
+English, then the formula.
+Do not invent rates.
+<span class="f">SCOPE: [paste]</span></div>
+      </div>
+      <div class="out"><b>Output</b>A table you can fill, and a formula you understand.</div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SESSION 5 · YOURS (11:45)
+     ===================================================================== -->
+
+<section class="slide" data-ch="4" data-title="Map a workflow">
+  <div class="k">Make it yours</div>
+  <h1 class="t">Map one task you do every week.</h1>
+  <div class="b">
+    <div class="row c4" style="height:100%;align-content:center">
+      <div class="card"><div class="lab">Input</div><div class="p">What starts it. An enquiry, a brief, a meeting, a date.</div></div>
+      <div class="card"><div class="lab">Now</div><div class="p">What you do today, in order.</div></div>
+      <div class="card"><div class="lab">Pain</div><div class="p">Where it slows down or goes wrong.</div></div>
+      <div class="card hi"><div class="lab a">Draft + check</div><div class="p">Where Copilot drafts, and where a person checks.</div></div>
+    </div>
+    <div class="foot">Candidates: enquiry to proposal, post-program follow-up, marketing calendar, BD pipeline, tender response.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="4" data-title="Reusable prompt">
+  <div class="k">Save it</div>
+  <h1 class="t">Build a prompt you can reuse.</h1>
+  <div class="b">
+    <div class="code" style="font-size:15px">Task:    <span class="f">[e.g. new enquiry to first proposal draft]</span>
+You are: <span class="f">[role]</span>
+Reader:  <span class="f">[who]</span>
+Input:   <span class="f">[what you will paste]</span>
+Steps:   <span class="f">[the order you want]</span>
+Output:  <span class="f">[format]</span>
+Check:   <span class="f">[what a person must verify]</span>
+Never:   <span class="f">[what it must not invent or include]</span></div>
+    <div class="foot">Save it where you already work: a note, a Word file, a saved prompt if your licence has them.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="4" data-title="Checkpoints">
+  <div class="k">Keep the judgement</div>
+  <h1 class="t">Name the checkpoints.</h1>
+  <div class="b">
+    <ul class="lst">
+      <li>Before anything goes to a client.</li>
+      <li>Before any figure is quoted.</li>
+      <li>Before any commitment or date is made.</li>
+      <li>Before anything is filed as a record.</li>
+    </ul>
+    <div class="foot"><b>It works every week when the checkpoints are named and the handoffs are deliberate.</b></div>
+  </div>
+</section>
+
+<section class="slide" data-ch="4" data-title="Commit">
+  <div class="k">12:15 · Commit</div>
+  <h1 class="t">Write down four things.</h1>
+  <div class="b">
+    <div class="row c2" style="height:100%;align-content:center">
+      <div class="card"><div class="lab">01</div><div class="h">Two or three tasks</div><div class="p">What you will try in the next week. Name them.</div></div>
+      <div class="card"><div class="lab">02</div><div class="h">The first prompt</div><div class="p">The one you will start with.</div></div>
+      <div class="card"><div class="lab">03</div><div class="h">The checkpoint</div><div class="p">The one you will not skip.</div></div>
+      <div class="card"><div class="lab">04</div><div class="h">One thing to stop</div><div class="p">The habit that no longer earns its keep.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-ch="4" data-title="Close">
+  <div class="k">Close</div>
+  <div class="b" style="display:flex;align-items:center">
+    <div>
+      <div class="big">The tools will change. <em>The habit will not.</em><span class="small">Check what Copilot can see. Carry context deliberately. Check the output. The person is the orchestrator.</span></div>
+      <div class="bigqr" style="margin-top:34px">
+        <img src="../assets/qr.svg" alt="QR code for the course site">
+        <div class="u">Everything from today:<br>michael-borck.github.io/<br>copilot-in-practice<br><br>Prompt library · exercises · checklist</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div></div>
+<script src="deck.js"></script>
+</body>
+</html>

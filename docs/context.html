@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Copilot can see · Copilot in Practice</title>
+<meta name="description" content="Where Copilot has context, what the
+licence changes, and how to carry work between apps.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">Copilot <span>in Practice</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html">Before</a>
+    <a href="context.html" class="on">Context</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="workflow.html">Workflow</a>
+    <a href="responsible-use.html">Responsible use</a>
+    <a href="resources.html">More</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>Session 3 · 10:00</p>
+</div>
+<h1 id="what-copilot-can-see">What Copilot can see</h1>
+<p>Copilot answers from what it can see. What it can see depends on
+three things:</p>
+<ol type="1">
+<li>The app you are in.</li>
+<li>The licence you have.</li>
+<li>How Curtin has configured the tenant.</li>
+</ol>
+<p>Two people can be on the same licence and still get different
+buttons, because the tenant settings decide which features are switched
+on. So the useful skill is not memorising the product. It is checking
+your own setup, and checking again after an update.</p>
+<h2 id="the-wall-between-apps">The wall between apps</h2>
+<div class="flow">
+  <div class="step"><b>Outlook</b><span>The selected email, and with a licence, the mailbox and calendar.</span></div>
+  <div class="step"><b>Word</b><span>The open document, and files you point it to.</span></div>
+  <div class="step"><b>Excel</b><span>The open workbook, and the range you select.</span></div>
+  <div class="step"><b>Chat</b><span>The web, the page you are on, and what you paste or upload.</span></div>
+  <div class="step"><b>You</b><span>The doorway. You carry the work across on purpose.</span></div>
+</div>
+<p>There is a wall between each box. Copilot does not pass work from
+Outlook to Word for you. That is not a bug to wait out. It is where
+judgement enters.</p>
+<h2 id="what-each-place-can-see">What each place can see</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Where you are</th>
+<th>What Copilot usually sees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copilot in Outlook, with an email selected</td>
+<td>The open email, and with an add-on licence, your mailbox, calendar
+and related files</td>
+</tr>
+<tr>
+<td>Copilot in Outlook, nothing selected</td>
+<td>The mailbox and calendar, to the extent your licence and tenant
+allow</td>
+</tr>
+<tr>
+<td>Copilot in Word</td>
+<td>The open document, and files you point it to with a licence</td>
+</tr>
+<tr>
+<td>Copilot in Excel</td>
+<td>The open workbook, and the range or table you select</td>
+</tr>
+<tr>
+<td>Copilot in PowerPoint</td>
+<td>The open deck</td>
+</tr>
+<tr>
+<td>Copilot Chat in the browser or Edge</td>
+<td>The web, the page you are on, and anything you paste or upload. Work
+data only with an add-on licence and a tenant that allows it</td>
+</tr>
+<tr>
+<td>Copilot Chat in Teams</td>
+<td>The open chat or meeting, and with a licence, work data</td>
+</tr>
+</tbody>
+</table>
+<p>The middle column is a guide, not a promise. Microsoft changes it.
+Verify on your own screen.</p>
+<h2 id="check-what-you-have">Check what you have</h2>
+<ol type="1">
+<li>Sign in at <code>copilot.cloud.microsoft</code> with your Curtin
+account.</li>
+<li>Look under your name. You will see Copilot Chat (Basic), M365
+Copilot (Basic) or M365 Copilot (Premium).</li>
+<li>Basic means web reasoning plus the content you open or upload.
+Premium adds work data through Microsoft Graph.</li>
+<li>Open the same chat inside Outlook and ask the same question. Note
+the difference.</li>
+</ol>
+<p>Ask this question of your own setup: <strong>“What can you see about
+my work right now?”</strong> The answer tells you what to trust it
+with.</p>
+<div class="note">
+<p>Microsoft is actively changing this. A 2026 roadmap item extends
+Copilot Chat in Outlook to reason over the whole inbox and calendar for
+people without an add-on licence, due around October 2026. By the time
+you read this, your screen may differ from the person next to you.
+Check, do not assume.</p>
+</div>
+<h2 id="the-carry-pattern">The carry pattern</h2>
+<p>Copilot does not move work between apps for you. You do. That is fine
+once it becomes a habit.</p>
+<ol type="1">
+<li><strong>Gather</strong> in the app that holds the context. In
+Outlook, select the email. In Word, open the document. In Edge, open the
+page.</li>
+<li><strong>Extract</strong> what matters. Ask for the decisions, dates,
+asks and numbers. Keep it short.</li>
+<li><strong>Carry</strong> it. Copy the result and paste it into the
+next app. Say where it came from.</li>
+<li><strong>Refine</strong> in the destination. Ask for the shape you
+need.</li>
+<li><strong>Check</strong> before it moves on. Names, figures,
+commitments.</li>
+</ol>
+<p>Every arrow is a copy and paste by a person. That is why the output
+is still yours.</p>
+<h2 id="personalisation-and-memory">Personalisation and memory</h2>
+<p>Copilot remembers context to be useful. That is helpful and also
+something to manage.</p>
+<ul>
+<li>Look for personalisation or memory settings in Copilot settings. The
+exact menu name moves, so use the search box.</li>
+<li>Review what it has remembered. Delete anything wrong, stale or about
+a client.</li>
+<li>If you share a machine or demo account, check what is remembered
+before you present.</li>
+<li>Turning memory off is reasonable for sensitive work. You will need
+to supply context each time.</li>
+</ul>
+<h2 id="edge">Edge</h2>
+<ul>
+<li>Sign in with the Curtin account, not a personal one, or you get the
+consumer experience.</li>
+<li>Work mode and web mode are different. Check which one you are
+in.</li>
+<li>Uploading a file is a deliberate act. Confirm the file, the
+permissions and the audience before you attach it.</li>
+<li>The page you have open is context. Close anything you would not want
+summarised if you are sharing your screen.</li>
+</ul>
+</main>
+<footer><div class="in">
+  <span>Copilot in Practice · Curtin Executive Education training materials</span>
+  <span>After the day: <a href="resources.html">Resources</a> · <a href="workflow.html">Workflow</a> · <a href="responsible-use.html">Responsible use</a></span>
+  <span>Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+<script>
+document.querySelectorAll('main pre').forEach(function (pre) {
+  var b = document.createElement('button');
+  b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy';
+  b.onclick = function () {
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1200);
+    });
+  };
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>
