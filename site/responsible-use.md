@@ -1,6 +1,6 @@
 ---
 pagetitle: Responsible use
-description: "What may go into Copilot, what to check, and where the person stays accountable."
+description: "Which tools are approved, what may go into them, what to check, and where the person stays accountable."
 nav-responsible: true
 ---
 
@@ -10,17 +10,35 @@ Session 2 · The rules in plain language
 
 # Responsible use
 
-This is not legal advice. It is the team's operating habit, aligned to Curtin policy. If a decision matters, check the current Curtin policy or ask the faculty's data governance contact.
+This is not legal advice. It is the team's operating habit, aligned to Curtin policy. If a decision matters, check the current policy or ask the faculty's data governance contact.
 
 ## The short version
 
 Only put into Copilot what you would put into a Curtin system. Treat every output as a draft by an unknown author. A person signs off, and the person who sends it owns it.
 
+## Which tools
+
+| Tool | Status | Use it for |
+|---|---|---|
+| **Microsoft Copilot** | Curtin's official tool | Work data, within the tenant. This is the default for anything to do with clients, participants or Curtin documents. |
+| **Claude** | Enterprise agreement, access by application | If you have been granted access, it is governed. Check with IT before putting client or participant data in it. |
+| **ChatGPT, Gemini, personal Copilot** | Not approved for Curtin work | Personal exploration with mock or public material only. Never real client or participant data. |
+
+If you are not sure whether a tool is approved, treat it as not approved until someone confirms.
+
 ## What enterprise Copilot protects
 
-Curtin's Copilot runs inside the Curtin tenant. Prompts, responses and the work data it can reach stay within the organisation's Microsoft 365 environment, under the same contractual terms as mail and files. That is a real protection, and it is why the tool is approved.
+Curtin's Copilot runs inside the Curtin tenant. Prompts, responses and the work data it can reach stay within the organisation's Microsoft 365 environment, under the same contractual terms as mail and files. That is a real protection, and it is why the tool is the default.
 
 It does not make every document appropriate to paste. Confidentiality, privacy and client obligations still apply.
+
+## Prompt, process, protect
+
+A simple way to keep experiments safe and still get value.
+
+1. **Prompt it.** Work out the prompt and the workflow using safe material: a public document, a sanitised brief, mock figures.
+2. **Process it.** Move the successful pattern into the governed tool and the real workflow: Copilot in Word, Excel, Outlook or Chat.
+3. **Protect it.** Sensitive or client-facing work stays in the approved tool, with the human checkpoints below.
 
 ## What not to paste
 
@@ -39,6 +57,17 @@ When in doubt, use a sanitised brief, or ask before you paste.
 - **It invents specifics.** Names, dates, figures, citations, policy clauses. Check every one.
 - **It uses stale context.** A document from last year, an old brief, an out-of-date fee schedule.
 - **It loses the thread between apps.** The outline in Word does not know what you agreed in Outlook.
+
+## The trade-offs
+
+AI does not remove trade-offs. It moves them. Notice where the friction is.
+
+| Tension | If you lean too far | What to remember |
+|---|---|---|
+| Thinking vs replacing | You stop forming your own view | Use it to support reasoning, not bypass it |
+| Speed vs safety | Data leaks, thin work goes out | Start with safe material and the approved tool |
+| One-shot vs conversation | Superficial, brittle output | Most good work needs a second and third turn |
+| Tool vs workflow | Shiny object, no lasting gain | The workflow is the win, not the tool |
 
 ## Human checkpoints
 

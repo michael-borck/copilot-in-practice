@@ -74,15 +74,14 @@ follow-up email.</li>
 <li>Tender response: evaluation criteria to existing evidence.</li>
 </ul>
 <h2 id="build-the-reusable-prompt">Build the reusable prompt</h2>
-<p>Turn the task into a template with slots you fill each time.</p>
-<pre><code>Task: [e.g. new enquiry to first proposal draft]
-You are: [role]
-Reader: [who]
-Input: [what you will paste]
-Steps: [the order you want]
-Output: [format]
-Check: [what must be verified by a person]
-Never: [what it must not invent or include]</code></pre>
+<p>Turn the task into an RTCF template with slots you fill each
+time.</p>
+<pre><code>ROLE: [who should write this]
+TASK: [verb and scope]
+CONTEXT: [reader, situation, standard, source]
+FORMAT: [length, structure, tone]
+CHECK: [what a person must verify]
+NEVER: [what it must not invent or include]</code></pre>
 <p>Save it somewhere you will find it. A note, a Word file, a Copilot
 saved prompt if your licence has them. The best place is the one you
 already open every day.</p>
@@ -106,6 +105,15 @@ deliberate.</p>
 <li>the checkpoint you will not skip</li>
 <li>one thing you will stop doing</li>
 </ul>
+<h2 id="five-questions-to-take-with-you">Five questions to take with
+you</h2>
+<ol type="1">
+<li>What is the task or challenge I am exploring?</li>
+<li>What is my first RTCF prompt?</li>
+<li>What did I like or not like about the response?</li>
+<li>What follow-up prompt would improve it?</li>
+<li>How might this become part of my routine?</li>
+</ol>
 <h2 id="checklist">Checklist</h2>
 <div id="checklist">
 <h3 id="this-week">This week</h3>
@@ -116,13 +124,16 @@ deliberate.</p>
 Copilot in Outlook and Copilot Chat the same question.</label></li>
 <li><label><input type="checkbox" />Pick two or three tasks from your
 own week.</label></li>
-<li><label><input type="checkbox" />For each task, write the first
-prompt you will use.</label></li>
+<li><label><input type="checkbox" />For each task, write the first RTCF
+prompt you will use: role, task, context, format.</label></li>
 <li><label><input type="checkbox" />For each task, name the checkpoint
 you will not skip.</label></li>
 </ul>
 <h3 id="before-you-paste-anything">Before you paste anything</h3>
 <ul class="task-list">
+<li><label><input type="checkbox" />Is this the approved tool? Copilot
+is the official tool. Claude needs access granted. Public tools are for
+mock data only.</label></li>
 <li><label><input type="checkbox" />Is this client or participant
 personal information? If yes, is there a reason and is it within
 policy?</label></li>
@@ -151,7 +162,14 @@ owns it?</label></li>
 PDF</a></p>
 <h2 id="follow-up">Follow-up</h2>
 <p>Four weeks after the session, bring one example: what you tried, what
-stuck, what did not. A short check-in is enough.</p>
+stuck, what did not. A short check-in is enough. Three questions for the
+check-in:</p>
+<ul>
+<li>Which task did you try, and how long did it take compared with
+before?</li>
+<li>Where did Copilot help, and where did it get in the way?</li>
+<li>What is the one checkpoint that saved you?</li>
+</ul>
 </main>
 <footer><div class="in">
   <span>Copilot in Practice · Curtin Executive Education training materials</span>

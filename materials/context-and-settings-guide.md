@@ -43,6 +43,21 @@ Copilot does not move work between apps for you. You do. That is fine once you m
 
 Every arrow is a copy and paste by a person. That is where judgement enters, and it is why the output is still yours.
 
+## When carrying is not practical
+
+You can batch several steps into one prompt, as long as you accept it is still one context and one output.
+
+```
+We will do [task] in steps.
+1. Summarise the brief.
+2. Identify the decisions the client needs to make.
+3. Draft an outline.
+4. List the gaps.
+Do step 1 only, then wait for me to say continue.
+```
+
+This does not join the apps. It just stops you making five separate prompts in one chat.
+
 ## Personalisation and memory
 
 Copilot remembers context to be useful. That is helpful and also something to manage.
@@ -58,6 +73,14 @@ Copilot remembers context to be useful. That is helpful and also something to ma
 - Work mode and web mode are different. Check which one you are in.
 - Uploading a file is a deliberate act. Confirm the file, the permissions and the audience before you attach it.
 - The page you have open is context. Close anything you would not want summarised if you are sharing your screen.
+
+## Which tools
+
+- **Microsoft Copilot** is Curtin's official tool for work data.
+- **Claude** is available through an enterprise agreement by application. If you have access, check with IT before putting client or participant data in it.
+- **ChatGPT, Gemini and personal Copilot** are for personal exploration with mock or public material only.
+
+If you are not sure whether a tool is approved, treat it as not approved until someone confirms.
 
 ## What not to paste
 

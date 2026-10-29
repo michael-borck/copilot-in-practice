@@ -20,7 +20,7 @@ Morning tea 10:30. Close 12:30.
 
 ## The one idea
 
-You are the orchestrator. Copilot keeps Curtin's data inside the tenant, but it does not pass work between Outlook, Word, Excel and Chat for you. Copilot in Outlook sees the open email. Copilot Chat in the browser does not, unless you paste or upload. So the skill is to get context in front of the right Copilot, carry the output to the next step yourself, and check it before it leaves the building.
+You are the orchestrator. The prompts use RTCF: role, task, context, format, with four upgrades for when the output misses. Copilot keeps Curtin's data inside the tenant, but it does not pass work between Outlook, Word, Excel and Chat for you. Copilot in Outlook sees the open email. Copilot Chat in the browser does not, unless you paste or upload. So the skill is to get context in front of the right Copilot, carry the output to the next step yourself, and check it before it leaves the building.
 
 ## Layout
 

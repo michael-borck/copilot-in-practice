@@ -34,7 +34,7 @@ By 12:30, each participant can:
 
 1. Say what their own Copilot can and cannot see, and why the answer depends on the app and their licence.
 2. Move a piece of work between Outlook, Word, Excel and Copilot Chat without losing control of it.
-3. Write a prompt that supplies context, states the task, sets the format and names the constraints.
+3. Write an RTCF prompt (role, task, context, format) and add an upgrade when the output misses.
 4. Take a client brief to a draft proposal outline in Word, then get a useful critique of it.
 5. Name the Curtin rules on what may go into an AI tool, and the human checkpoints that stay with the person.
 6. Leave with two or three named tasks to try in the following week.
@@ -54,7 +54,7 @@ By 12:30, each participant can:
 | 9:15 | Session 1: opportunity and risk | Where it helps, where it fails, the rules, a live demo |
 | 10:00 | Session 2: context | What your Copilot can see, and how to carry work between apps |
 | 10:30 | Morning tea | |
-| 11:00 | Session 3: brief to proposal | Hands-on: outline, critique, budget table |
+| 11:00 | Session 3: brief to proposal | Formula demo, then hands-on: outline, critique, budget table |
 | 11:45 | Session 4: your workflow | Marketing organisation and client/BD management |
 | 12:15 | Commit and close | Two or three tasks, checkpoints, follow-up |
 
@@ -79,6 +79,15 @@ Instructor note: Microsoft is changing this behaviour through late 2026. A roadm
 
 ## 9:15 to 10:00 Session 1: opportunity and risk
 
+### Two guiding questions (2 minutes)
+
+Write these on the whiteboard and leave them there all morning:
+
+1. How can we automate what we already do?
+2. What could we never do until now?
+
+They keep the session on opportunity as well as risk. Come back to them at the close.
+
 ### Where it genuinely helps in Exec Ed work (10 minutes)
 
 Keep this concrete and tied to the team's week:
@@ -102,9 +111,30 @@ The pattern: Copilot is strong at first drafts, restructuring, summarising and c
 
 Live demo, five minutes: ask Copilot to justify a weak proposal. Then argue the opposite and watch it switch sides. Then ask it to list what it does not know. This lands better than any warning slide.
 
+### The trade-offs (5 minutes)
+
+AI does not remove trade-offs. It moves them. Name the four that matter for this team:
+
+| Tension | If you lean too far | What to remember |
+|---|---|---|
+| Thinking vs replacing | You stop forming your own view | Use it to support reasoning, not bypass it |
+| Speed vs safety | Data leaks, thin work goes out | Start with safe material and the approved tool |
+| One-shot vs conversation | Superficial, brittle output | Most good work needs a second and third turn |
+| Tool vs workflow | Shiny object, no lasting gain | The workflow is the win, not the tool |
+
 ### The rules, in plain language (10 minutes)
 
-Not legal advice. The team's operating rules, aligned to Curtin policy:
+Not legal advice. The team's operating rules, aligned to Curtin policy.
+
+### Which tools (2 minutes)
+
+- Microsoft Copilot is Curtin's official tool for work data.
+- Claude is available through an enterprise agreement by application. If someone has access, it is governed, but check with IT before client or participant data goes in.
+- ChatGPT, Gemini and personal Copilot are for personal exploration with mock or public material only.
+
+If you are not sure whether a tool is approved, treat it as not approved.
+
+### What may go in (8 minutes)
 
 - Only put into Copilot what you would put into a Curtin system. Enterprise Copilot keeps prompts and responses inside the tenant, but that does not make any content appropriate to enter.
 - Client and participant personal information, pricing, margins and contract terms need a reason to be there. Prefer the sanitised brief. If in doubt, ask before you paste.
@@ -118,7 +148,7 @@ Close the block with the accountability line: Copilot can draft, but it cannot b
 
 ## 10:00 to 10:30 Session 2: context, and carrying work between apps
 
-### What Copilot can see (10 minutes)
+### What Copilot can see (8 minutes)
 
 Three variables decide what Copilot knows:
 
@@ -140,21 +170,34 @@ Demonstrate one loop, live, end to end:
 
 Say the rule out loud: every arrow in that loop is a copy and paste by a person. That is not a limitation to apologise for. It is where judgement enters.
 
-### Edge and the browser (5 minutes)
+### Edge and the browser (4 minutes)
 
 - Sign in with the Curtin account. Work and web are different modes.
 - Uploading a file is a deliberate act. Check you have the right file and the right permissions.
 - The page you are on is context. Be careful what is open on screen when you share or demo.
 
-### Five prompt habits (5 minutes)
+### RTCF and four upgrades (6 minutes)
 
-Cover these briefly here; they get used in Session 3.
+RTCF is the brief. Cover it here, then use it in Session 3.
 
-1. Say who you are and who the reader is.
-2. Paste the source, do not describe it.
-3. State the format you want: headings, table, word limit.
-4. Name the constraints: tone, what to leave out, what not to invent.
-5. Ask for the gaps: "list what you could not determine from this material".
+- **Role:** who should write this. "You are an experienced proposal writer who writes plainly."
+- **Task:** the verb and the scope. "Draft a one-page proposal outline."
+- **Context:** the reader, the situation, the standard, and the source pasted in.
+- **Format:** length, structure, tone.
+
+Context does most of the work. Paste the source rather than describing it.
+
+Four upgrades, for when the output still misses:
+
+1. **Example.** Paste one you liked and ask it to match the shape, not the content.
+2. **Done.** Define success, and mark anything uncertain with [CHECK] rather than guessing.
+3. **Questions.** Ask it to put up to five questions before it starts.
+4. **Steps.** Outline first, then draft one section at a time.
+
+### When carrying is not practical (2 minutes)
+
+Show the Steps upgrade as a single-prompt workflow: summarise the brief, identify the decisions, draft an outline, list the gaps, one step at a time. Say clearly that this does not join the apps. It just stops five separate prompts in one chat.
+
 
 ## 10:30 to 11:00 Morning tea
 
@@ -162,7 +205,13 @@ Cover these briefly here; they get used in Session 3.
 
 Work in pairs or threes. Use the sanitised samples in `source-documents/samples/`. One is a professional development proposal brief, one is an international tender response. Both keep the structure of the real documents with client names, staff names, rates and totals removed.
 
-### Exercise 1: the brief (10 minutes)
+### Demo: the broken formula (3 minutes)
+
+Open Excel with a worked example and a deliberately broken formula. Ask Copilot: "What is wrong with this formula, and how do I fix it?" Then ask it to explain the fix in plain English.
+
+This is the fastest win in the room. Most people have a spreadsheet that has cost them an afternoon. Show the fix, then ask who has one they would like to bring to Exercise 4.
+
+### Exercise 1: the brief (8 minutes)
 
 Read the sample brief. In Copilot Chat (or Word), ask for:
 
@@ -179,7 +228,7 @@ Move to Word. Paste the brief and the Exercise 1 output. Ask for a proposal outl
 
 Then tighten it with a second prompt: "Cut anything that is generic. Keep only what is specific to this brief. Mark anything you inferred rather than read."
 
-### Exercise 3: the critique (15 minutes)
+### Exercise 3: the critique (14 minutes)
 
 Ask Copilot to red-team the outline as a sceptical client:
 
@@ -212,13 +261,24 @@ Common candidates from this team:
 
 ### Build the reusable prompt (10 minutes)
 
-Turn the chosen task into a prompt template with named slots: `[client]`, `[program]`, `[audience]`, `[constraints]`, `[house style]`. Save it somewhere the team can find it. The prompt library in `materials/prompt-library.md` has starters.
+Turn the chosen task into an RTCF template with named slots: role, task, context, format, plus a check and a never line. Save it somewhere the team can find it. The prompt library in `materials/prompt-library.md` has starters.
 
-### Put the checkpoints in (10 minutes)
+### Put the checkpoints in (5 minutes)
 
 For the chosen workflow, mark where a person must check before the work moves on: before anything goes to a client, before any figure is quoted, before any commitment is made, before anything is filed as a record.
 
 This is the answer to "where does AI fit and will it work every week". It works when the checkpoints are named and the handoffs are deliberate.
+
+### Five questions (5 minutes)
+
+Each person answers these on paper or in the workbook:
+
+1. What is the task or challenge I am exploring?
+2. What is my first RTCF prompt?
+3. What did I like or not like about the response?
+4. What follow-up prompt would improve it?
+5. How might this become part of my routine?
+
 
 ## 12:15 to 12:30 Commit and close
 
@@ -232,6 +292,20 @@ Each person writes down:
 Collect the commitments. Offer a 30-minute follow-up in four weeks, or an async check-in, to see what stuck. Offer the companion materials: prompt library, settings guide, take-home checklist.
 
 Close on the one idea again: the person is the orchestrator. The tools will change. The habit of checking what Copilot can see, carrying context deliberately and checking the output will not.
+
+## Questions that will come up
+
+**Can I use Claude?** It is available through an enterprise agreement by application. If you have access, it is governed, but check with IT before client or participant data goes in. Copilot remains the official default.
+
+**Can I connect Chat to my inbox?** Not by switching a setting. Use the Copilot pane inside Outlook, or paste the email into Chat. Microsoft is extending this through late 2026, so check your own screens.
+
+**Why does it agree with me?** It is optimised to be helpful, not to be right. Use the guardrail prompt: only change the assessment if a new fact arrives, and name the fact that changed it.
+
+**Is the output confidential?** The tenant protects data in transit and at rest. It does not make the output correct or approved. A person still signs off.
+
+**What about participant data?** Use the approved tool, the minimum data, and the policy. If in doubt, use a sanitised version and ask.
+
+**Will this replace my job?** No. It removes keyboard time. The judgement, the client relationship and the accountability stay with you.
 
 ## Materials
 
@@ -256,7 +330,7 @@ Close on the one idea again: the person is the orchestrator. The tools will chan
 - Everyone can state what their own Copilot can see by the end of the pre-flight.
 - Every participant leaves with a draft outline from their own or a sample brief.
 - Every participant leaves with two or three named tasks and a checkpoint.
-- Follow-up at four weeks: how many tasks were tried, what stuck, what did not.
+- Follow-up at four weeks: which tasks were tried, how long they take now, and which checkpoint caught something.
 
 ## Things to re-check the week before
 

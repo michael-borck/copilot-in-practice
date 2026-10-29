@@ -30,6 +30,8 @@ Copilot keeps Curtin's data inside the tenant, but it does not pass work between
 
 So the skill is not "automate the chain". The skill is to get the right context in front of the right Copilot, then carry the output to the next step yourself.
 
+The prompts use RTCF: role, task, context, format. Context does most of the work. The [prompt library](prompts.html) has RTCF templates for proposals, tenders, marketing, client work and Excel, plus four upgrades for when the output misses.
+
 ```{=html}
 <div class="flow">
   <div class="step"><b>1 Gather</b><span>Open the email, document or page that holds the context.</span></div>
@@ -58,7 +60,7 @@ The problem, the one idea, and a five-minute context pre-flight. Everyone checks
 
 ### Judge
 
-Where Copilot helps, where it trips you up, and the rules on what may go in. A live demo of why it agrees with you when you push back.
+Where Copilot helps, where it trips you up, the trade-offs, and the rules on what may go in. A live demo of why it agrees with you when you push back.
 :::
 
 ::: {.card .s3}
@@ -66,7 +68,7 @@ Where Copilot helps, where it trips you up, and the rules on what may go in. A l
 
 ### See
 
-The three things that decide what Copilot knows: the app, the licence, the tenant. Then the carry pattern, end to end.
+The three things that decide what Copilot knows: the app, the licence, the tenant. Then the carry pattern, and RTCF.
 :::
 
 ::: {.card .s4}
@@ -74,7 +76,7 @@ The three things that decide what Copilot knows: the app, the licence, the tenan
 
 ### Build
 
-Hands-on with a sanitised brief: outcomes, proposal outline, a red-team critique, and a budget table.
+A broken-formula demo, then hands-on with a sanitised brief: outcomes, proposal outline, a red-team critique, and a budget table.
 :::
 
 ::: {.card .s5}

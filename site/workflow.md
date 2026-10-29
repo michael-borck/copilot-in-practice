@@ -34,17 +34,15 @@ Common candidates for this team:
 
 ## Build the reusable prompt
 
-Turn the task into a template with slots you fill each time.
+Turn the task into an RTCF template with slots you fill each time.
 
 ```
-Task: [e.g. new enquiry to first proposal draft]
-You are: [role]
-Reader: [who]
-Input: [what you will paste]
-Steps: [the order you want]
-Output: [format]
-Check: [what must be verified by a person]
-Never: [what it must not invent or include]
+ROLE: [who should write this]
+TASK: [verb and scope]
+CONTEXT: [reader, situation, standard, source]
+FORMAT: [length, structure, tone]
+CHECK: [what a person must verify]
+NEVER: [what it must not invent or include]
 ```
 
 Save it somewhere you will find it. A note, a Word file, a Copilot saved prompt if your licence has them. The best place is the one you already open every day.
@@ -69,6 +67,14 @@ Write down:
 - the checkpoint you will not skip
 - one thing you will stop doing
 
+## Five questions to take with you
+
+1. What is the task or challenge I am exploring?
+2. What is my first RTCF prompt?
+3. What did I like or not like about the response?
+4. What follow-up prompt would improve it?
+5. How might this become part of my routine?
+
 ## Checklist
 
 ::: {#checklist}
@@ -77,11 +83,12 @@ Write down:
 - [ ] Note your Copilot label: Chat (Basic), M365 Copilot (Basic) or Premium.
 - [ ] Run the context check once: ask Copilot in Outlook and Copilot Chat the same question.
 - [ ] Pick two or three tasks from your own week.
-- [ ] For each task, write the first prompt you will use.
+- [ ] For each task, write the first RTCF prompt you will use: role, task, context, format.
 - [ ] For each task, name the checkpoint you will not skip.
 
 ### Before you paste anything
 
+- [ ] Is this the approved tool? Copilot is the official tool. Claude needs access granted. Public tools are for mock data only.
 - [ ] Is this client or participant personal information? If yes, is there a reason and is it within policy?
 - [ ] Does it contain pricing, margins, contract terms or a confidentiality clause?
 - [ ] Is it third-party material the client has not cleared for this use?
@@ -102,4 +109,8 @@ If any answer is unsure, use the sanitised version or ask first.
 
 ## Follow-up
 
-Four weeks after the session, bring one example: what you tried, what stuck, what did not. A short check-in is enough.
+Four weeks after the session, bring one example: what you tried, what stuck, what did not. A short check-in is enough. Three questions for the check-in:
+
+- Which task did you try, and how long did it take compared with before?
+- Where did Copilot help, and where did it get in the way?
+- What is the one checkpoint that saved you?

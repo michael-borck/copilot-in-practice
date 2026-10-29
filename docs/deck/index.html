@@ -160,6 +160,20 @@ table.w td:first-child{color:var(--ink);font-weight:600}
   </div>
 </section>
 
+<section class="slide" data-ch="1" data-title="Trade-offs">
+  <div class="k">The trade-offs</div>
+  <h1 class="t">It moves the friction. It does not remove it.</h1>
+  <div class="b">
+    <table class="w">
+      <tr><th>Tension</th><th>If you lean too far</th><th>What to remember</th></tr>
+      <tr><td>Thinking vs replacing</td><td>You stop forming your own view</td><td>Use it to support reasoning, not bypass it</td></tr>
+      <tr><td>Speed vs safety</td><td>Data leaks, thin work goes out</td><td>Start with safe material and the approved tool</td></tr>
+      <tr><td>One-shot vs conversation</td><td>Superficial, brittle output</td><td>Most good work needs a second and third turn</td></tr>
+      <tr><td>Tool vs workflow</td><td>Shiny object, no lasting gain</td><td>The workflow is the win, not the tool</td></tr>
+    </table>
+  </div>
+</section>
+
 <section class="slide" data-ch="1" data-title="Sycophancy demo" data-steps="3">
   <div class="k">Live demo</div>
   <h1 class="t">Watch it switch sides.</h1>
@@ -201,6 +215,7 @@ table.w td:first-child{color:var(--ink);font-weight:600}
         <div class="p">Third-party material the client has not cleared, and anything you could not defend if the client saw the prompt.</div>
       </div>
     </div>
+    <div class="foot">Copilot is the official tool. Claude is by application. Public tools are for mock data only.</div>
   </div>
 </section>
 
@@ -285,17 +300,32 @@ table.w td:first-child{color:var(--ink);font-weight:600}
   </div>
 </section>
 
-<section class="slide" data-ch="2" data-title="Five habits">
-  <div class="k">Prompt habits</div>
-  <h1 class="t">Five habits that do the work.</h1>
+<section class="slide" data-ch="2" data-title="RTCF">
+  <div class="k">The brief</div>
+  <h1 class="t">RTCF.</h1>
+  <div class="sub">Role, task, context, format. Context does most of the work.</div>
   <div class="b">
-    <ul class="steps">
-      <li>Say who you are and who the reader is.</li>
-      <li>Paste the source. Do not describe it.</li>
-      <li>State the format: headings, table, word limit.</li>
-      <li>Name the constraints: tone, what to leave out, what not to invent.</li>
-      <li>Ask for the gaps: "list what you could not determine from this material".</li>
-    </ul>
+    <div class="row c4" style="height:100%;align-content:center">
+      <div class="card"><div class="lab">R</div><div class="h">Role</div><div class="p">Who should write this. "An experienced proposal writer who writes plainly."</div></div>
+      <div class="card"><div class="lab">T</div><div class="h">Task</div><div class="p">The verb and the scope. "Draft a one-page proposal outline."</div></div>
+      <div class="card hi"><div class="lab a">C</div><div class="h">Context</div><div class="p">The reader, the situation, the standard, and the source pasted in.</div></div>
+      <div class="card"><div class="lab">F</div><div class="h">Format</div><div class="p">Length, structure, tone.</div></div>
+    </div>
+    <div class="foot">Paste the source. Do not describe it.</div>
+  </div>
+</section>
+
+<section class="slide" data-ch="2" data-title="Four upgrades">
+  <div class="k">When it misses</div>
+  <h1 class="t">Four upgrades.</h1>
+  <div class="b">
+    <div class="flow5" style="grid-template-columns:repeat(4,1fr)">
+      <div class="bx"><div class="n">01 EXAMPLE</div><h4>Match one you liked</h4><p>Paste it. Match the shape, not the content.</p></div>
+      <div class="bx"><div class="n">02 DONE</div><h4>Define success</h4><p>Length, structure, facts only. Mark guesses with [CHECK].</p></div>
+      <div class="bx"><div class="n">03 QUESTIONS</div><h4>Let it ask first</h4><p>Up to five questions, one at a time, before it starts.</p></div>
+      <div class="bx hi"><div class="n">04 STEPS</div><h4>Split the job</h4><p>Outline first, then one section at a time.</p></div>
+    </div>
+    <div class="foot">Steps is also how you batch a workflow into one prompt. It still does not join the apps.</div>
   </div>
 </section>
 
@@ -310,8 +340,32 @@ table.w td:first-child{color:var(--ink);font-weight:600}
      SESSION 4 · BUILD (11:00)
      ===================================================================== -->
 
-<section class="slide ex" data-ch="3" data-min="10" data-title="Exercise 1 · Read the brief">
-  <div class="exbar"><span class="pill">Exercise 1</span><span class="mins">10 minutes</span></div>
+<section class="slide ex" data-ch="3" data-min="3" data-title="Demo · broken formula">
+  <div class="exbar"><span class="pill">Demo</span><span class="mins">3 minutes</span></div>
+  <h1 class="t">Fix a broken formula.</h1>
+  <div class="exgrid">
+    <ul class="steps">
+      <li>Open a spreadsheet with a formula that will not work.</li>
+      <li>Ask Copilot what is wrong and how to fix it.</li>
+      <li>Ask it to explain the fix in plain English.</li>
+      <li>Ask who has a formula that has cost them an afternoon.</li>
+    </ul>
+    <div>
+      <div class="card">
+        <div class="lab">Prompt</div>
+        <div class="code">What is wrong with this formula,
+and how do I fix it? Explain the
+fix in plain English, as if I have
+to maintain it next year.
+<span class="f">FORMULA: [paste]</span></div>
+      </div>
+      <div class="out"><b>Output</b>The fastest win in the room. Carry it into Exercise 4.</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide ex" data-ch="3" data-min="8" data-title="Exercise 1 · Read the brief">
+  <div class="exbar"><span class="pill">Exercise 1</span><span class="mins">8 minutes</span></div>
   <h1 class="t">Read the brief like a proposal writer.</h1>
   <div class="exgrid">
     <ul class="steps">
@@ -359,8 +413,8 @@ inferences with [inferred].</div>
   </div>
 </section>
 
-<section class="slide ex" data-ch="3" data-min="15" data-title="Exercise 3 · Red team">
-  <div class="exbar"><span class="pill">Exercise 3</span><span class="mins">15 minutes</span></div>
+<section class="slide ex" data-ch="3" data-min="14" data-title="Exercise 3 · Red team">
+  <div class="exbar"><span class="pill">Exercise 3</span><span class="mins">14 minutes</span></div>
   <h1 class="t">Get an honest critique.</h1>
   <div class="exgrid">
     <ul class="steps">
@@ -434,14 +488,12 @@ Do not invent rates.
   <div class="k">Save it</div>
   <h1 class="t">Build a prompt you can reuse.</h1>
   <div class="b">
-    <div class="code" style="font-size:15px">Task:    <span class="f">[e.g. new enquiry to first proposal draft]</span>
-You are: <span class="f">[role]</span>
-Reader:  <span class="f">[who]</span>
-Input:   <span class="f">[what you will paste]</span>
-Steps:   <span class="f">[the order you want]</span>
-Output:  <span class="f">[format]</span>
-Check:   <span class="f">[what a person must verify]</span>
-Never:   <span class="f">[what it must not invent or include]</span></div>
+    <div class="code" style="font-size:15px">ROLE:    <span class="f">[who should write this]</span>
+TASK:    <span class="f">[verb and scope]</span>
+CONTEXT: <span class="f">[reader, situation, standard, source]</span>
+FORMAT:  <span class="f">[length, structure, tone]</span>
+CHECK:   <span class="f">[what a person must verify]</span>
+NEVER:   <span class="f">[what it must not invent or include]</span></div>
     <div class="foot">Save it where you already work: a note, a Word file, a saved prompt if your licence has them.</div>
   </div>
 </section>
@@ -470,6 +522,7 @@ Never:   <span class="f">[what it must not invent or include]</span></div>
       <div class="card"><div class="lab">03</div><div class="h">The checkpoint</div><div class="p">The one you will not skip.</div></div>
       <div class="card"><div class="lab">04</div><div class="h">One thing to stop</div><div class="p">The habit that no longer earns its keep.</div></div>
     </div>
+    <div class="foot">Then answer the five questions on the workflow page: task, prompt, response, follow-up, routine.</div>
   </div>
 </section>
 

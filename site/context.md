@@ -71,6 +71,21 @@ Copilot does not move work between apps for you. You do. That is fine once it be
 
 Every arrow is a copy and paste by a person. That is why the output is still yours.
 
+## When carrying is not practical
+
+Sometimes you want the whole job in one place. You can batch several steps into a single prompt, as long as you accept that it is still one context and one output.
+
+```
+We will do [task] in steps.
+1. Summarise the brief.
+2. Identify the decisions the client needs to make.
+3. Draft an outline.
+4. List the gaps.
+Do step 1 only, then wait for me to say continue.
+```
+
+This does not join the apps. It just stops you making five separate prompts in one chat. Use it for work that fits inside one document.
+
 ## Personalisation and memory
 
 Copilot remembers context to be useful. That is helpful and also something to manage.

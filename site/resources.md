@@ -34,6 +34,10 @@ These materials borrow the visual language and some of the framing from two Curt
 - [AI in Strategy](https://github.com/michael-borck/ai-in-strategy): choosing where to invest.
 - [Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation/): the idea that AI work is a conversation you steer, not a task you hand over.
 
+## Another Curtin course
+
+[AI literacy for Teaching Support](https://github.com/michael-borck/curtin-tso-ai-literacy) is a two-hour Curtin course for Teaching Support Officers. It has a larger prompt playbook, more on prompt chaining, and a worked Excel and Word demo. The trade-offs table and the chaining pattern on this site are adapted from it.
+
 ## The repo
 
 The source for this site is at [github.com/michael-borck/copilot-in-practice](https://github.com/michael-borck/copilot-in-practice). The course outline, prompt library, checklist, survey and sanitised briefs are all there. Reuse the structure if it helps your team.
