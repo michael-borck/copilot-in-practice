@@ -33,6 +33,10 @@ FORMAT: [length, structure, tone].
 
 Context does most of the work. Paste the source rather than describing it.
 
+::: note
+This is the same four elements Microsoft teaches in MS-4018 (context, goal, source, expectations), plus a role. Source sits inside Context. Expectations is Format.
+:::
+
 ## Four upgrades
 
 When an RTCF prompt still disappoints, add one of these rather than rewriting from scratch.

@@ -18,6 +18,10 @@ After the day
 - [Triage email with Copilot](https://support.microsoft.com/en-us/outlook/triage-email-with-microsoft-365-copilot-in-outlook). Commands for flagging, moving and summarising.
 - [Microsoft Copilot overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview) and [release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). Worth a skim once a month, because it changes.
 
+## Microsoft's own training
+
+[Draft, analyze, and present with Microsoft Copilot (MS-4018)](https://learn.microsoft.com/en-us/training/paths/draft-analyze-present-microsoft-365-copilot/) is Microsoft's free seven-module path, updated October 2026. Start with module 1, about 22 minutes. It covers the same ground as Session 2 in Microsoft's language: Work IQ grounding, data protection, and a four-element prompt framework. Finish it for the badge if you want a record.
+
 ## On this site
 
 - [What Copilot can see](context.html): the app, licence and tenant, and the carry pattern.
@@ -25,6 +29,7 @@ After the day
 - [Exercises](exercises.html): the four hands-on tasks and the sanitised briefs.
 - [Workflow](workflow.html): map a task, build a prompt, name the checkpoints.
 - [Responsible use](responsible-use.html): what may go in, and what stays with a person.
+- [Agents](context.html#agents): built-in, custom and Copilot Studio, and why a custom agent is a saved brief.
 
 ## Companion masterclasses
 

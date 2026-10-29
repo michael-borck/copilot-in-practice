@@ -84,7 +84,7 @@ A broken-formula demo, then hands-on with a sanitised brief: outcomes, proposal 
 
 ### Yours
 
-Map one recurring workflow, build a reusable prompt, and put the human checkpoints in. Leave with two or three tasks.
+Map one recurring workflow, build a reusable prompt, put the human checkpoints in, and see what an agent is, and is not. Leave with two or three tasks.
 :::
 ::::::
 

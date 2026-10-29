@@ -44,6 +44,7 @@ By 12:30, each participant can:
 - **Two-minute survey.** `survey/pre-session-survey.md`. Ask which tasks take longer than they should and where they think AI could help. Responses needed by Friday 30 October so the examples can be built into the day.
 - **Licence check.** Sign in at copilot.cloud.microsoft and note the label under your name: Copilot Chat (Basic), M365 Copilot (Basic) or M365 Copilot (Premium). This tells you what the session will look like on your screen.
 - **One real task.** Bring one recurring task from your week. No client names or pricing in the example you bring.
+- **Optional reading.** Module 1 of Microsoft's MS-4018 path, about 22 minutes, if you want the official version before the day. The link is in `site/resources.md`.
 
 ## Run sheet
 
@@ -153,7 +154,7 @@ Close the block with the accountability line: Copilot can draft, but it cannot b
 Three variables decide what Copilot knows:
 
 1. **The app.** Copilot in Outlook sees the selected email and, with a licence, the mailbox. Copilot in Word sees the open document. Copilot Chat in Edge sees the page and whatever you paste or upload.
-2. **The licence.** Copilot Chat (Basic) is mostly web plus what you upload. A Copilot add-on licence adds work data through Microsoft Graph: mail, calendar, files, chats, meetings.
+2. **The licence.** Copilot Chat (Basic) is mostly web plus what you upload. A Copilot add-on licence adds work data through Work IQ and Microsoft Graph: mail, calendar, files, chats, meetings.
 3. **The tenant configuration.** Curtin's admins decide which features are on. Two people on the same licence can still see different buttons.
 
 Draw the simple diagram on the whiteboard: four boxes (Outlook, Word, Excel, Chat) with a wall between each. The wall is the point. You are the doorway.
@@ -247,7 +248,7 @@ In Excel, paste the scope list and ask for a table with columns for activity, as
 
 This is the block the director flagged as the real benefit: organisation of marketing, and management of client/BD.
 
-### Map one workflow (10 minutes)
+### Map one workflow (8 minutes)
 
 Each person picks one recurring task and writes it as five steps: input, what they do now, where it hurts, where Copilot could draft, where a person must check.
 
@@ -259,17 +260,27 @@ Common candidates from this team:
 - Client/BD pipeline: turning meeting notes into a CRM-style update and a follow-up email.
 - Tender response: mapping evaluation criteria to existing evidence.
 
-### Build the reusable prompt (10 minutes)
+### Build the reusable prompt (9 minutes)
 
 Turn the chosen task into an RTCF template with named slots: role, task, context, format, plus a check and a never line. Save it somewhere the team can find it. The prompt library in `materials/prompt-library.md` has starters.
 
-### Put the checkpoints in (5 minutes)
+### Put the checkpoints in (4 minutes)
 
 For the chosen workflow, mark where a person must check before the work moves on: before anything goes to a client, before any figure is quoted, before any commitment is made, before anything is filed as a record.
 
 This is the answer to "where does AI fit and will it work every week". It works when the checkpoints are named and the handoffs are deliberate.
 
-### Five questions (5 minutes)
+### Agents, briefly (5 minutes)
+
+An agent is a brief that remembers. Three tiers:
+
+1. Built-in: Analyst, Researcher, Facilitator, Writing Coach, Idea Coach. You use them, you do not build them.
+2. Custom: instructions plus files, built inside Copilot. This is the Custom GPT equivalent. It can ask questions, take a file and draft, but it does not talk to other agents or run on its own.
+3. Copilot Studio: actions and systems. A project with an owner, a knowledge source and governance. Out of scope today.
+
+If someone wants to build one, map it to their RTCF prompt: the instructions are the brief, the knowledge is the file, the conversation is the iteration. Sharing is blocked on the tenant, so it stays personal. The rule: do not automate a step you have not done manually twice.
+
+### Five questions (4 minutes)
 
 Each person answers these on paper or in the workbook:
 
@@ -295,6 +306,8 @@ Close on the one idea again: the person is the orchestrator. The tools will chan
 
 ## Questions that will come up
 
+**Is this an agent?** Only if it has its own instructions and knowledge and you open it by name. What most teams build is a saved prompt with a name and some files. It does not talk to other agents or run on its own. Microsoft ships several agents you can just use: Analyst, Researcher, Facilitator, Writing Coach, Idea Coach.
+
 **Can I use Claude?** It is available through an enterprise agreement by application. If you have access, it is governed, but check with IT before client or participant data goes in. Copilot remains the official default.
 
 **Can I connect Chat to my inbox?** Not by switching a setting. Use the Copilot pane inside Outlook, or paste the email into Chat. Microsoft is extending this through late 2026, so check your own screens.
@@ -316,6 +329,7 @@ Close on the one idea again: the person is the orchestrator. The tools will chan
 | `materials/take-home-checklist.md` | One-page checklist for the following week |
 | `source-documents/samples/` | Sanitised briefs used in Session 3 |
 | `survey/pre-session-survey.md` | Pre-session survey |
+| [MS-4018](https://learn.microsoft.com/en-us/training/paths/draft-analyze-present-microsoft-365-copilot/) | Microsoft's official path, for optional pre-work and the post-session extension |
 
 ## Logistics
 

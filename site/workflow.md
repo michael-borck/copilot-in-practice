@@ -47,6 +47,8 @@ NEVER: [what it must not invent or include]
 
 Save it somewhere you will find it. A note, a Word file, a Copilot saved prompt if your licence has them. The best place is the one you already open every day.
 
+Curious about agents? See [Agents](context.html#agents): the three tiers, and why a custom agent is a saved brief rather than automation.
+
 ## Put the checkpoints in
 
 For your workflow, mark where a person must check before the work moves on:

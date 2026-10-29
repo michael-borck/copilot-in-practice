@@ -26,7 +26,7 @@ The middle column is a guide, not a promise. Microsoft changes it. Verify on you
 
 1. Sign in at `copilot.cloud.microsoft` with your Curtin account.
 2. Look under your name. One of these labels appears: Copilot Chat (Basic), M365 Copilot (Basic), M365 Copilot (Premium).
-3. Basic means you get web reasoning and the content you open or upload. Premium adds work data through Microsoft Graph.
+3. Basic means you get web reasoning and the content you open or upload. Premium adds work data through Work IQ, which builds on Microsoft Graph.
 4. Open the same chat inside Outlook and ask the same question. Note the difference.
 
 Ask this question of your own setup: "What can you see about my work right now?" The answer tells you what to trust it with.
@@ -57,6 +57,16 @@ Do step 1 only, then wait for me to say continue.
 ```
 
 This does not join the apps. It just stops you making five separate prompts in one chat.
+
+## Agents
+
+An agent is a brief that remembers. Three tiers:
+
+- Built-in: Analyst, Researcher, Facilitator, Writing Coach, Idea Coach. Use them, do not build them.
+- Custom: instructions plus files, built inside Copilot. The Custom GPT equivalent.
+- Copilot Studio: actions and systems. A project with an owner and governance.
+
+Custom agents do not talk to each other or run on their own. They are a saved prompt with a name and files. Do the workflow manually twice before you build one.
 
 ## Personalisation and memory
 

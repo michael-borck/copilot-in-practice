@@ -30,7 +30,7 @@ Sign in at [copilot.cloud.microsoft](https://copilot.cloud.microsoft) with your 
 |---|---|
 | Copilot Chat (Basic) | Web reasoning, plus whatever you open or upload. Limited work data. |
 | M365 Copilot (Basic) | Similar chat, with some app access depending on the tenant. |
-| M365 Copilot (Premium) | Adds work data through Microsoft Graph: mail, calendar, files, chats, meetings. |
+| M365 Copilot (Premium) | Adds work data through Work IQ and Microsoft Graph: mail, calendar, files, chats, meetings. |
 
 Write the label down. Bring it with you. The session looks different on different licences, and that difference is one of the things we will talk about.
 

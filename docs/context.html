@@ -106,7 +106,8 @@ account.</li>
 <li>Look under your name. You will see Copilot Chat (Basic), M365
 Copilot (Basic) or M365 Copilot (Premium).</li>
 <li>Basic means web reasoning plus the content you open or upload.
-Premium adds work data through Microsoft Graph.</li>
+Premium adds work data through Work IQ, Microsoft’s work-data layer,
+which builds on Microsoft Graph.</li>
 <li>Open the same chat inside Outlook and ask the same question. Note
 the difference.</li>
 </ol>
@@ -151,6 +152,46 @@ context and one output.</p>
 Do step 1 only, then wait for me to say continue.</code></pre>
 <p>This does not join the apps. It just stops you making five separate
 prompts in one chat. Use it for work that fits inside one document.</p>
+<h2 id="agents">Agents</h2>
+<p>An agent is a brief that remembers. There are three tiers, and only
+the first is something you use without setting anything up.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tier</th>
+<th>What it is</th>
+<th>What you do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in</td>
+<td>Analyst, Researcher, Facilitator, Writing Coach, Idea Coach</td>
+<td>Use it. You do not build or maintain it.</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td>Instructions plus files, built inside Copilot</td>
+<td>Build it from your best RTCF prompt. The Custom GPT equivalent.</td>
+</tr>
+<tr>
+<td>Copilot Studio</td>
+<td>Actions, connectors, systems</td>
+<td>A project with an owner, a knowledge source and governance.</td>
+</tr>
+</tbody>
+</table>
+<p>Custom agents do not talk to each other, do not run on their own, and
+do not hand work to the next app. They are a saved prompt with a name
+and some files attached. Useful when you do the same task often. Not
+automation.</p>
+<p>Before you build one, do the workflow manually twice. If the prompt
+and the check work, the agent is just packaging.</p>
 <h2 id="personalisation-and-memory">Personalisation and memory</h2>
 <p>Copilot remembers context to be useful. That is helpful and also
 something to manage.</p>

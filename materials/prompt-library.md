@@ -21,6 +21,8 @@ FORMAT: [length, structure, tone].
 
 Context does most of the work. Paste the source rather than describing it.
 
+This is Microsoft's four elements from MS-4018 (context, goal, source, expectations) plus a role. Source sits inside Context. Expectations is Format.
+
 ## Four upgrades
 
 **Example.** Paste one you liked and ask it to match the shape, not the content.
