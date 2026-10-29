@@ -17,7 +17,19 @@ Work in pairs or threes. Use one of the sanitised briefs:
 
 Both keep the structure of a real document with client names, staff names, rates and totals removed. The tender brief is harder. Use the proposal brief if you want a gentler start.
 
-## Exercise 1 · Read the brief
+```{=html}
+<div class="flow">
+  <div class="step"><b>1 Find · Outlook</b><span>Select the brief. Extract the decisions and the asks.</span></div>
+  <div class="step"><b>2 Draft · Word</b><span>Paste the brief. Ask for the house structure.</span></div>
+  <div class="step"><b>3 Challenge · Chat</b><span>Red-team it as a sceptical client. Mark inferences.</span></div>
+  <div class="step"><b>4 Quantify · Excel</b><span>Scope to a table. Trace every number.</span></div>
+  <div class="step"><b>5 Send · Outlook</b><span>Check names, figures, commitments. A person sends.</span></div>
+</div>
+```
+
+The four exercises are one chain, not four separate tasks. Each one picks up what the last one produced.
+
+## Exercise 1 · Find the brief
 
 ::: {.pill}
 10 min
@@ -61,7 +73,7 @@ BRIEF: [paste]
 NOTES: [paste]
 ```
 
-## Exercise 3 · Red-team it
+## Exercise 3 · Challenge it
 
 ::: {.pill}
 15 min
@@ -83,7 +95,7 @@ OUTLINE: [paste]
 Watch for agreement. If you push back and Copilot immediately concedes, that is sycophancy, not a better answer. Ask it to give the strongest case against its own position before it responds.
 :::
 
-## Exercise 4 · Build the budget table
+## Exercise 4 · Quantify it
 
 ::: {.pill}
 5 min

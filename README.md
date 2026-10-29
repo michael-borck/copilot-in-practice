@@ -60,6 +60,7 @@ The deck relies on `../assets/fonts` and `../assets/qr.svg`, so present from the
 ## Editing
 
 - **Site:** edit `site/*.md`, then rebuild. Pandoc fenced divs (`.cards`, `.card`, `.note`) and the `.flow` HTML block give the layout.
+- **By app:** `site/by-app.md` mirrors Microsoft's module structure for after the day. Keep it in step with the prompt library.
 - **Deck:** edit `deck/deck.html`. Each slide is a `<section>` with `data-ch` (session 0 to 4). Speaker notes go in `<aside class="notes">`. Use `data-s="1"` for progressive reveals and `data-min` for the exercise timer.
 - **Checklist PDF:** edit `handouts/checklist.html`.
 - **Styles:** `assets/site.css` for the site, `deck/deck.css` for the slides.

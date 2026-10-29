@@ -30,6 +30,7 @@ After the day
 - [Workflow](workflow.html): map a task, build a prompt, name the checkpoints.
 - [Responsible use](responsible-use.html): what may go in, and what stays with a person.
 - [Agents](context.html#agents): built-in, custom and Copilot Studio, and why a custom agent is a saved brief.
+- [By app](by-app.html): Outlook, Word, Excel, Chat and Teams, with two prompts and one caution each.
 
 ## Companion masterclasses
 

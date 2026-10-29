@@ -206,6 +206,8 @@ Show the Steps upgrade as a single-prompt workflow: summarise the brief, identif
 
 Work in pairs or threes. Use the sanitised samples in `source-documents/samples/`. One is a professional development proposal brief, one is an international tender response. Both keep the structure of the real documents with client names, staff names, rates and totals removed.
 
+Name the arc before they start: find (Outlook), draft (Word), challenge (Chat or Word), quantify (Excel), send (Outlook). The four exercises are one chain, not four separate tasks. Each one picks up what the last produced.
+
 ### Demo: the broken formula (3 minutes)
 
 Open Excel with a worked example and a deliberately broken formula. Ask Copilot: "What is wrong with this formula, and how do I fix it?" Then ask it to explain the fix in plain English.
@@ -319,6 +321,27 @@ Close on the one idea again: the person is the orchestrator. The tools will chan
 **What about participant data?** Use the approved tool, the minimum data, and the policy. If in doubt, use a sanitised version and ask.
 
 **Will this replace my job?** No. It removes keyboard time. The judgement, the client relationship and the accountability stay with you.
+
+## Why the day is shaped this way
+
+The sequence follows ADKAR, the change model, without naming it to the room:
+
+- **Awareness:** Session 1, the risks and the trade-offs.
+- **Desire:** their own task, the demos, the broken-formula win.
+- **Knowledge:** context, the carry pattern, RTCF.
+- **Ability:** Session 3, one workflow end to end.
+- **Reinforcement:** the commit, the checklist, the four-week check-in, and one or two champions.
+
+The four-week check-in is the Reinforcement step. Ask the director to nominate one or two champions who can share wins and answer questions between sessions.
+
+## If the conversation turns to licences
+
+Two questions from the adoption literature are worth having ready:
+
+- Which roles create reports, proposals or comparisons from data already in Microsoft 365? They get the most value.
+- How will we know it worked? Time saved on a named task, and quality compared with the person's own work.
+
+Answer briefly and return to the workflow. This is a use session, not a licence review.
 
 ## Materials
 
